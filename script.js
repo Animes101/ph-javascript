@@ -140,3 +140,32 @@
 
 
 
+// Array length, index, Get and set by index
+
+
+const numberss=[5,5,5,5,5,5,5,6,6,7,4,3,,3]
+
+const friends=['kamal','salam','nipon','jibon','subornao']
+
+console.log(numberss.length)
+console.log(friends.length)
+
+console.log(numberss[3])
+
+console.log(friends.push('priyanka rani'))
+console.log(friends.pop())
+console.log(friends)
+
+console.log(friends.shift())
+console.log(friends.unshift('priyanka rani'))
+console.log(friends);
+
+
+console.log(friends.includes('salam'))
+
+console.log(friends.indexOf('nipon'))
+
+console.log(Array.isArray(numberss));
+console.log(friends.join('|'))
+
+console.log(friends.slice(2,5))

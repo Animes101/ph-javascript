@@ -143,29 +143,116 @@
 // Array length, index, Get and set by index
 
 
-const numberss=[5,5,5,5,5,5,5,6,6,7,4,3,,3]
+// const numberss=[5,5,5,5,5,5,5,6,6,7,4,3,,3]
 
-const friends=['kamal','salam','nipon','jibon','subornao']
+// const friends=['kamal','salam','nipon','jibon','subornao']
 
-console.log(numberss.length)
-console.log(friends.length)
+// console.log(numberss.length)
+// console.log(friends.length)
 
-console.log(numberss[3])
+// console.log(numberss[3])
 
-console.log(friends.push('priyanka rani'))
-console.log(friends.pop())
-console.log(friends)
+// console.log(friends.push('priyanka rani'))
+// console.log(friends.pop())
+// console.log(friends)
 
-console.log(friends.shift())
-console.log(friends.unshift('priyanka rani'))
-console.log(friends);
+// console.log(friends.shift())
+// console.log(friends.unshift('priyanka rani'))
+// console.log(friends);
 
 
-console.log(friends.includes('salam'))
+// console.log(friends.includes('salam'))
 
-console.log(friends.indexOf('nipon'))
+// console.log(friends.indexOf('nipon'))
 
-console.log(Array.isArray(numberss));
-console.log(friends.join('|'))
+// console.log(Array.isArray(numberss));
+// console.log(friends.join('|'))
 
-console.log(friends.slice(2,5))
+// console.log(friends.slice(2,5))
+
+
+//  Introduction to  Loop
+
+// var numbers=[44,33,65,6,7,8]
+
+ // for(var x=0; x<=numbers.length; x++){
+ //     console.log(x)
+ // }
+
+// for(var y of numbers){
+//     console.log(y)
+// }
+
+// let i = 1;
+// while (i <= 5) {
+// //   console.log(i);
+//   i += 1
+// }
+
+// console.log(i)
+
+// let num=1;
+
+// while(num <=10){
+
+//     if(num % 2 == 0){
+//         console.log(num)
+//     }
+
+//     num++
+// }
+
+
+// for(var x=0; x<40 ; x=x+2){
+
+//     console.log(x);
+// }
+
+// for(var y=1; y<50; y=y+2){
+//     console.log(y)
+// }
+
+
+// for(let x=10; x >=0; x--){
+
+//     console.log(x);
+// }
+
+
+// 18_7 When to use a break and continue
+
+
+
+// for(var i=0; i<60; i++){
+
+//     if(i===10){
+//         break
+//     }
+
+
+//     console.log(i);
+// }
+
+// for(var y=0; y<60; y++){
+
+//     if(y===10){
+//         continue
+//     }
+
+
+//     console.log(y);
+// }
+
+
+// 18_8 (optional) Introduction to Do While Loop
+
+
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+
+

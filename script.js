@@ -506,3 +506,125 @@
 // const year = date.getFullYear();
 
 // console.log(year)
+
+// const products=[
+//     {name:'tshirt',prices:500,},
+//     {name:'tshirt',prices:600,},
+//     {name:'tshirt',prices:800,},
+//     {name:'tshirt',prices:700,},
+// ]
+
+
+// const totalCost=(fullProduct)=>{
+//      let totalPrices=0;
+//     for(let product of fullProduct){
+    
+
+//         totalPrices=totalPrices + product.prices;
+//     }
+
+//     return totalPrices
+// }
+
+
+// console.log(totalCost(products))
+
+
+// const products=[
+//     {name:'tshirt',prices:500,qut:2},
+//     {name:'tshirt',prices:600,qut:5},
+//     {name:'tshirt',prices:800,qut:6},
+//     {name:'tshirt',prices:700,qut:7},
+// ];
+
+
+// function totalPrices(pros){
+
+//     let totalCost=0;
+
+//     for(let pro of pros){
+
+//         let itemsCost=pro.prices * pro.qut;
+
+//         totalCost =totalCost + itemsCost;
+//     }
+
+//     return totalCost;
+
+// }
+
+
+
+// console.log(totalPrices(products))
+
+
+
+// function add(n1,n2){
+
+//     return n1 + n2;
+
+// }
+
+// function subdd(n1,n2){
+
+//     return n1 - n2;
+
+// }
+
+// function mul(n1,n2){
+
+//     return n1 * n2;
+
+// }
+
+// function dive(n1,n2){
+//     return n1 % n2
+
+// }
+
+
+
+// function calculate(a,b,oparation){
+
+//     switch(oparation){
+
+//         case '+':
+
+//         const result1=add(a,b);
+//         console.log(result1);
+
+//         break;
+
+//         case '-':
+
+//         const result2=subdd(a,b);
+//         console.log(result2);
+
+//         break;
+
+//         case '*':
+
+//         const result3=mul(a,b);
+//         console.log(result3);
+
+//         break;
+
+//         case '/':
+
+//         const result4=dive(a,b);
+//         console.log(result4);
+
+//         break;
+
+        
+
+//     }
+
+// }
+
+
+
+// calculate(40,50,'+')
+// calculate(40,50,'-')
+// calculate(40,50,'*')
+// calculate(40,50,'/')

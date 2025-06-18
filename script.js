@@ -308,21 +308,65 @@
 //19_5 Introduction to Objects properties and values
 
 
-const students={
-    namess:'mahabub islam',
-    age:50,
-    cgpa:4.56,
-    dep:'bangla',
-    languess:['bangla','enlish','china']
-}
+// const students={
+//     namess:'mahabub islam',
+//     age:50,
+//     cgpa:4.56,
+//     dep:'bangla',
+//     languess:['bangla','enlish','china']
+// }
 
-console.log(students.namess);
+// console.log(students.namess);
 
-const keyss=Object.keys(students);
+// const keyss=Object.keys(students);
 
-console.log(keyss)
+// console.log(keyss)
 
-const values=Object.values(students);
+// const values=Object.values(students);
 
-console.log(values);
+// console.log(values);
 
+
+
+
+// for(let studen in students){
+
+//     console.log(students[studen])
+// }
+
+
+// const numbers=[3,4,45,5,6,76,7,65,5,434,3,3,3,34,4,5,];
+
+
+// console.log(numbers.reverse());
+
+// const rev=[];
+
+
+// for(let num of numbers){
+
+//     // console.log(num)
+
+//     rev.unshift(num)
+// }
+
+// console.log(rev)
+
+// console.log(Math.max(...numbers))
+
+// let bigNumber=numbers[0];
+
+// for(let topNum of numbers){
+
+//     if(topNum > bigNumber){
+//         bigNumber=topNum;
+    
+//     }
+// }
+
+// console.log(bigNumber);
+
+
+// const person=['rakin','salam','nabin','Pakhi'];
+
+// console.log(person.sort())

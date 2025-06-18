@@ -247,12 +247,82 @@
 // 18_8 (optional) Introduction to Do While Loop
 
 
-let i = 1;
+// let i = 1;
 
-do {
-  console.log(i);
-  i++;
-} while (i <= 5);
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 5);
+
+//19_1 Introduction to string and string vs array
+
+// const country='bangladesh';
+// const division='RANGPUR';
+// const thana='   ruhiya thana';
 
 
+
+// console.log(country.toUpperCase());
+
+// console.log(division.toLocaleLowerCase())
+
+// console.log(thana.trim())
+
+
+// const namess='andor kila bandor bon';
+
+
+// console.log(namess.slice(3,8));
+
+
+// console.log(namess.split(' '))
+
+// // const jon=namess.join('|')
+
+// const podi='khala';
+
+
+// const total=namess.concat(podi);
+
+// console.log(total)
+
+// console.log(podi.includes('k'))
+
+// const letter=' asdf asdf asdf asdf asdf asdf asdf ';
+
+// let reversLetter='';
+
+// for(var letr of letter){
+
+//     console.log(letr)
+
+//     reversLetter=letr + reversLetter;
+// }
+
+// console.log(reversLetter)
+
+// let rev=letter.split('').reverse();
+
+// console.log(rev)
+
+//19_5 Introduction to Objects properties and values
+
+
+const students={
+    namess:'mahabub islam',
+    age:50,
+    cgpa:4.56,
+    dep:'bangla',
+    languess:['bangla','enlish','china']
+}
+
+console.log(students.namess);
+
+const keyss=Object.keys(students);
+
+console.log(keyss)
+
+const values=Object.values(students);
+
+console.log(values);
 

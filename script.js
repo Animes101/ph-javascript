@@ -370,3 +370,69 @@
 // const person=['rakin','salam','nabin','Pakhi'];
 
 // console.log(person.sort())
+
+
+// function display(){
+
+//     console.log('function');
+// }
+
+// display();
+
+// 20-2 Add Function parameter, handle multiple parameters
+
+
+// function display1(x,y){
+
+//     const sum=x + y + z;
+
+//     return sum;
+// }
+
+// console.log(display1(30,50));
+
+// function double(numbers){
+
+//     let ddb=numbers * 2;
+
+//     return ddb
+
+
+
+// }
+
+// console.log(double(500))
+
+// const stirngss=(str)=>{
+//     let totalLength=str.length;
+
+//     return totalLength;
+
+
+// }
+
+// console.log(stirngss('animes barman is ok'))
+
+
+// const sumFunctiofn=(allNumber)=>{
+
+//     let total=0;
+
+//     for(let num of allNumber){
+
+//         total +=num
+//     }
+
+//     return total;
+
+
+// }
+
+// let to=sumFunctiofn([55,40,600,200]);
+
+// console.log(to);
+
+
+
+
+

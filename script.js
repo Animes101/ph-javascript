@@ -433,6 +433,76 @@
 // console.log(to);
 
 
+// const aple=90;//change hoba na
+
+// let ornage=40;//
+
+
+// const liYear=(year)=>{
+//     if(year % 4 === 0){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+
+// console.log(liYear(2043))
+
+
+// function oddAgerage(numbers){
+
+//     var oddToal=0;
+
+//    for(let number of numbers){
+//        if(number % 2 === 1){
+//         oddToal += number;
+//        }
+//    }
+
+
+//    return oddToal;
+// }
+
+// console.log(oddAgerage([60,4,3,3,4,44,65,6,7,6,65,66]))
+
+
+// const duplacet=[44,44,33,33,3,3,3,];
+
+// function duplacetFunction(dd){
+//        let unik=[];
+//      for(let d of dd){
+        
+
+//         if(unik.includes(d) === false){
+//             unik.push(d);
+//         }
+
+        
+
+//     }
+
+    
+
+//     return unik;
 
 
 
+
+// }
+
+// console.log(duplacetFunction(duplacet))
+
+
+// console.log(Math.round(4.80))
+// console.log(Math.floor(4.64))
+// console.log(Math.ceil(5.60))
+// console.log(Math.max(5,6,7,6,5,4,4,4,4,6,6,))
+// console.log(Math.min(4,4,5,5,5,4,4,33,22,1))
+// console.log(Math.random()*3+1)
+
+// const date=new Date();
+
+// const year = date.getFullYear();
+
+// console.log(year)

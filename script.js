@@ -665,9 +665,49 @@
 // 24-5 Dynamic style, getAttribute, setAttribute, innerText, innerHTML
 
 
-var list =document.getElementById('last-items');
+// var list =document.getElementById('last-items');
 
 
-console.log(list.getAttribute('class'));
+// console.log(list.getAttribute('class'));
 
-console.log(list.getAttribute('id'));
+// console.log(list.getAttribute('id'));
+
+// list.setAttribute('id', 'okk id add');
+
+// console.log(list);
+
+
+// var allList=document.querySelectorAll('li');
+
+// console.log(allList);
+
+
+// for( let list of allList){
+
+//     list.classList.add('styleCls')
+// }
+
+
+// var dives=document.querySelector('div');
+
+// console.log(dives.parentElement)
+
+// console.log(dives.childNodes);
+
+// console.log(dives.firstChild)
+// console.log(dives.lastChild);
+
+// var ullist=dives.querySelector('ul');
+
+// console.log(ullist);
+
+// console.log(ullist.nextSibling)
+
+// console.log(dives.previousElementSibling)
+
+
+// var liCreate=document.createElement('li');
+
+// liCreate.innerText='create text node'
+
+// ullist.appendChild(liCreate);

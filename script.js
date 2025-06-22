@@ -628,3 +628,46 @@
 // calculate(40,50,'-')
 // calculate(40,50,'*')
 // calculate(40,50,'/')
+
+///Dom Manupulation
+
+// var ulList=document.getElementsByTagName('ul');
+
+// console.log(ulList);
+
+// var list=document.getElementsByTagName('li')
+
+
+// for(let li of list){
+
+//     console.log(li.innerText='okkkk');
+// }
+
+
+
+// var listItems=document.getElementsByClassName('list-items');
+
+// var list=document.getElementById('second-items');
+
+// list.style.color='red'
+
+// list.innerText='addd color is ok'
+
+
+// var lists=document.querySelector('#last-items');
+
+// lists.innerText='okkkkkkkkkkkk'
+
+// var allItems=document.querySelectorAll('li ')
+// console.log(allItems);
+
+
+// 24-5 Dynamic style, getAttribute, setAttribute, innerText, innerHTML
+
+
+var list =document.getElementById('last-items');
+
+
+console.log(list.getAttribute('class'));
+
+console.log(list.getAttribute('id'));

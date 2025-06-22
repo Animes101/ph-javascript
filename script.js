@@ -711,3 +711,17 @@
 // liCreate.innerText='create text node'
 
 // ullist.appendChild(liCreate);
+
+
+var btn=document.querySelector('.btn');
+
+var text=document.querySelector('#show');
+ 
+btn.addEventListener('click',(e)=>{
+
+    var textBtn=e.target.innerText;
+    text.innerText=textBtn
+
+    text.classList.add('styleCls')
+
+})

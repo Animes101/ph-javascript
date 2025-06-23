@@ -713,15 +713,54 @@
 // ullist.appendChild(liCreate);
 
 
-var btn=document.querySelector('.btn');
+// var btn=document.querySelector('.btn');
 
-var text=document.querySelector('#show');
+// var text=document.querySelector('#show');
  
+// btn.addEventListener('click',(e)=>{
+
+//     var textBtn=e.target.innerText;
+//     text.innerText=textBtn
+
+//     text.classList.add('styleCls')
+
+// })
+
+
+
+var btn=document.querySelector('#btn');
+
+
 btn.addEventListener('click',(e)=>{
 
-    var textBtn=e.target.innerText;
-    text.innerText=textBtn
+    e.preventDefault();
 
-    text.classList.add('styleCls')
 
-})
+    var name=document.getElementById('name').value;
+    var email=document.getElementById('email').value;
+    var password=document.getElementById('pass').value;
+
+
+    if(name === '' || email ==='' || password === ''){
+        alert('please fill all input ')
+    }
+
+
+    const userData={
+        name:name,
+        email:email,
+        password:password
+    }
+
+    console.log(userData)
+    //clear input fields
+    
+
+    document.getElementById('name').value='';
+    document.getElementById('email').value='';
+    document.getElementById('pass').value='';
+
+
+}
+
+)

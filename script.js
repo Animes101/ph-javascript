@@ -756,9 +756,9 @@
 //     //clear input fields
     
 
-    document.getElementById('name').value='';
-    document.getElementById('email').value='';
-    document.getElementById('pass').value='';
+    // document.getElementById('name').value='';
+    // document.getElementById('email').value='';
+    // document.getElementById('pass').value='';
 
 
 // }
@@ -773,4 +773,83 @@
 //     namesField.style.backgroundColor='red';
 
     
+// })
+
+
+// document.getElementById('name').addEventListener('blur',()=>{
+
+//     console.log('blur i son')
+
+    
+// })
+
+// document.getElementById('name').addEventListener('keydown',()=>{
+
+//     console.log('key down i on')
+
+    
+// })
+
+// document.getElementById('name').addEventListener('keyup',()=>{
+
+//     console.log('key up i on')
+
+    
+// })
+
+
+// window.addEventListener('keydown',(e)=>{
+//     console.log(e.key);
+// })
+
+
+// var pr=document.getElementById('parend');
+
+// var btn=document.getElementById('btn');
+
+// pr.addEventListener('click',(e)=>{
+
+//     console.log('click')
+
+// })
+
+// btn.addEventListener('click',(e)=>{
+
+//     e.stopPropagation();
+
+//     console.log('btn click')
+// })
+
+// var prent=document.querySelector('ul');
+
+// prent.addEventListener('click',(e)=>{
+
+//      e.target.removeChild(e.target);
+
+// })
+// var liList=document.querySelectorAll('li');
+// var ullist=document.querySelector('li');
+
+
+// for(let li of liList){
+
+//     li.addEventListener('click',(e)=>{
+
+//         e.target.parentElement.removeChild(e.target);
+    
+//     })
+// }
+
+
+// var button=document.getElementById('add')
+
+// button.addEventListener('click',(e)=>{
+
+//     const licreate=document.createElement('li');
+//     licreate.innerText=`hello ${Math.floor(Math.random()*5 + 1)}`
+
+
+//     ullist.appendChild(licreate)
+
+
 // })

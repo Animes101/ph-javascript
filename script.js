@@ -728,32 +728,32 @@
 
 
 
-var btn=document.querySelector('#btn');
+// var btn=document.querySelector('#btn');
 
 
-btn.addEventListener('click',(e)=>{
+// btn.addEventListener('click',(e)=>{
 
-    e.preventDefault();
-
-
-    var name=document.getElementById('name').value;
-    var email=document.getElementById('email').value;
-    var password=document.getElementById('pass').value;
+//     e.preventDefault();
 
 
-    if(name === '' || email ==='' || password === ''){
-        alert('please fill all input ')
-    }
+//     var name=document.getElementById('name').value;
+//     var email=document.getElementById('email').value;
+//     var password=document.getElementById('pass').value;
 
 
-    const userData={
-        name:name,
-        email:email,
-        password:password
-    }
+//     if(name === '' || email ==='' || password === ''){
+//         alert('please fill all input ')
+//     }
 
-    console.log(userData)
-    //clear input fields
+
+//     const userData={
+//         name:name,
+//         email:email,
+//         password:password
+//     }
+
+//     console.log(userData)
+//     //clear input fields
     
 
     document.getElementById('name').value='';
@@ -761,6 +761,16 @@ btn.addEventListener('click',(e)=>{
     document.getElementById('pass').value='';
 
 
-}
+// }
 
-)
+// )
+
+
+// var namesField=document.getElementById('name');
+
+// document.getElementById('name').addEventListener('focus',()=>{
+
+//     namesField.style.backgroundColor='red';
+
+    
+// })

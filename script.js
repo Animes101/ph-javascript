@@ -863,10 +863,29 @@
 
 function triangleArea(){
 
-    var base=document.getElementById('base').value ;
-    var height=document.getElementById('height').value;
 
-    console.log(base,height);
+    var base=document.getElementById('base') ;
+    var height=document.getElementById('height');
+
+    let baseNumber=parseFloat(base.value);
+    let heightNumber=parseFloat(height.value);
+
+ 
+
+    let area= 0.5 *baseNumber *heightNumber;
+
+    var calculateItems=document.getElementById('items');
+
+    let createItem=document.createElement('li');
+    createItem.innerText=` Triangle Area is: ${area}`;
+
+    calculateItems.appendChild(createItem);
+
+    createItem.addEventListener('click',(e)=>{ 
+
+        e.target.parentElement.removeChild(e.target)
+    })
+
 
 
 

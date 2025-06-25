@@ -88,11 +88,11 @@
          <p>Area (A) = 0.5 b h</p>
          <div>
             <label for="triangle">cm</label>
-            <input onclick="triangleArea()" type="text" name="triangle" id="base" placeholder="b">
+            <input type="text" name="triangle" id="base" placeholder="b">
             <label for="triangle">cm</label>
-            <input type="text" name="triangle" id="triangle" placeholder="h">
+            <input type="text" name="triangle" id="height" placeholder="h">
          </div>
-         <button class="calbtn">calculate</button>
+         <button onclick="triangleArea()"  class="calbtn">calculate</button>
       </div>
 
        <!-- card -->
@@ -155,6 +155,12 @@
 
       <h1>Area Calculation</h1>
       <hr>
+
+      <div>
+         <ul id="items">
+
+         </ul>
+      </div>
    </div>
 </main>
 

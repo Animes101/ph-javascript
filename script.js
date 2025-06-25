@@ -853,3 +853,24 @@
 
 
 // })
+
+
+
+
+
+// triangle calculate
+
+
+function triangleArea(){
+
+    var base=document.getElementById('base').value ;
+    var height=document.getElementById('height').value;
+
+    console.log(base,height);
+
+
+
+}
+
+
+

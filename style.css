@@ -4,5 +4,88 @@
     font-weight: bold;
 }
 
+/* geometry geneup project */
 
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#5375a1;
+    padding:10px
+}
+.header div h1{
+    color:white;
+    font-size: 30px;
+
+}
+
+.header div p{
+    color:gray;
+    font-size: 18px;
+    text-shadow: 2px 2px 3px black;
+
+}
+.header button{
+    padding:5px 10px;
+    font-size:20px;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+
+.main-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-area{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+.area-calculation{
+    width: 20%;
+}
+.card{
+    width:30%;
+    padding:10px;
+}
+
+.card img{
+    width: 90%;
+    margin:auto;
+    height:100px
+
+
+}
+
+.card h1{
+    text-align: center;
+
+}
+.card p{
+    text-align: center;
+
+}
+
+
+.calbtn{
+    width: 100%;
+    background-color: rgb(52, 52, 218);
+    margin:20px auto;
+    color:white;
+    font-size: 20px;
+    border-radius: 5px;;
+}
 

@@ -861,69 +861,90 @@
 // triangle calculate
 
 
-  var calculateItems=document.getElementById('items')
+//   var calculateItems=document.getElementById('items')
 
-function triangleArea(){
-
-
-    var base=getHeightAndWidth('base') ;
-    var height=getHeightAndWidth('height')
+// function triangleArea(){
 
 
-    let area= 0.5 *base *height;
+//     var base=getHeightAndWidth('base') ;
+//     var height=getHeightAndWidth('height')
 
 
-    let createItem=document.createElement('li');
-    createItem.innerText=` Triangle Area is: ${area}`;
+//     let area= 0.5 *base *height;
 
-    calculateItems.appendChild(createItem);
 
-    createItem.addEventListener('click',(e)=>{ 
-
-        e.target.parentElement.removeChild(e.target)
-    })
+//    createElement(area);
 
 
 
 
-}
+// }
 
-//Rectangle 
+// //Rectangle 
 
-const rectangle=()=>{
+// const rectangle=()=>{
 
-    let widthrec=getHeightAndWidth('widthrec');
-    let lembo=getHeightAndWidth('lembo');
+//     let widthrec=getHeightAndWidth('widthrec');
+//     let lembo=getHeightAndWidth('lembo');
 
-    let area=widthrec *lembo;
+//     let area=widthrec *lembo;
 
-    let createItem=document.createElement('li');
-    createItem.innerText=` Triangle Area is: ${area}`;
-
-    calculateItems.appendChild(createItem);
-
-    createItem.addEventListener('click',(e)=>{ 
-
-        e.target.parentElement.removeChild(e.target)
-    })
+//     createElement(area);
 
 
-}
+// }
 
-//get hight and width  
-
-
-const getHeightAndWidth=(value1)=>{
+// //Parallelogram  
 
 
-    const height=document.getElementById(value1);
+// const parallelogram=()=>{
 
-    const heightNumber=parseFloat(height.value);
+
+//     var base=getHeightAndWidth('pro-base');
+//     var height=getHeightAndWidth('pro-height');
+
+//    let area=base * height;
+
+//     createElement(area);
+
+
+// }
+
+// //get hight and width  
+
+
+// const getHeightAndWidth=(value1)=>{
+
+
+//     const height=document.getElementById(value1);
+
+//     const heightNumber=parseFloat(height.value);
   
 
-    return heightNumber;
+//     return heightNumber;
 
-}
+// }
+
+// //create element
+
+// const createElement=(area)=>{
+
+//     let createItem=document.createElement('li');
+//     createItem.innerText=` Triangle Area is: ${area}`;
+
+//     calculateItems.appendChild(createItem);
+
+//     createItem.addEventListener('click',(e)=>{ 
+
+//         e.target.parentElement.removeChild(e.target)
+//     })
+
+
+
+
+
+
+
 
 
 

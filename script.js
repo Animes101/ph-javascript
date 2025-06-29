@@ -861,20 +861,17 @@
 // triangle calculate
 
 
+  var calculateItems=document.getElementById('items')
+
 function triangleArea(){
 
 
-    var base=document.getElementById('base') ;
-    var height=document.getElementById('height');
+    var base=getHeightAndWidth('base') ;
+    var height=getHeightAndWidth('height')
 
-    let baseNumber=parseFloat(base.value);
-    let heightNumber=parseFloat(height.value);
 
- 
+    let area= 0.5 *base *height;
 
-    let area= 0.5 *baseNumber *heightNumber;
-
-    var calculateItems=document.getElementById('items');
 
     let createItem=document.createElement('li');
     createItem.innerText=` Triangle Area is: ${area}`;
@@ -888,6 +885,43 @@ function triangleArea(){
 
 
 
+
+}
+
+//Rectangle 
+
+const rectangle=()=>{
+
+    let widthrec=getHeightAndWidth('widthrec');
+    let lembo=getHeightAndWidth('lembo');
+
+    let area=widthrec *lembo;
+
+    let createItem=document.createElement('li');
+    createItem.innerText=` Triangle Area is: ${area}`;
+
+    calculateItems.appendChild(createItem);
+
+    createItem.addEventListener('click',(e)=>{ 
+
+        e.target.parentElement.removeChild(e.target)
+    })
+
+
+}
+
+//get hight and width  
+
+
+const getHeightAndWidth=(value1)=>{
+
+
+    const height=document.getElementById(value1);
+
+    const heightNumber=parseFloat(height.value);
+  
+
+    return heightNumber;
 
 }
 

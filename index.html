@@ -182,23 +182,23 @@
    <div class="bg-[url(img/images/background.png)] bg-no-repeat bg-cover w-[50%] h-[80vh] mx-auto relative ">
 
        <!-- game start -->
-       <!-- <div class="absolute top-0  bottom-0 right-0 left-[-81px] m-auto w-[900px] h-[400px] bg-green-500 space-y-10">
+       <div id="stGame" class="stGame absolute top-0  bottom-0 right-0 left-[-81px] m-auto w-[900px] h-[400px] bg-green-500 space-y-10">
          <h1 class="text-center font-bold text-4xl text-white mt-14">ALPHABET CLASS</h1>
          <P class="text-center text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</P>
-         <button  class="font-bold py-5 px-10 bg-purple-300 rounded-sm w-[200px] mx-auto block text-white text-xl cursor-pointer hover:text-black">Play Now</button>
-      </div> -->
+         <button  onclick="play()" class="font-bold py-5 px-10 bg-purple-300 rounded-sm w-[200px] mx-auto block text-white text-xl cursor-pointer hover:text-black">Play Now</button>
+      </div>
 
 
 
       <!-- game play -->
 
-      <!-- <div class="">
+      <div id="playGame" class="playGame  hidden">
          <div class="w-[100%] bg-purple-400/50 border-8 border-gray-500 rounded  h-[400px]  mt-12 ">
             <h1 class="text-center bg-gray-500">Don't watch keyboard  while playing...</h1>
 
 
             <div class="flex justify-center items-center ">
-               <h1 class="text-4xl font-bold shadow shadow-black text-gray-200  mt-50">Y</h1>
+               <h1 id="showLetter" class="text-4xl font-bold shadow shadow-black text-gray-200  mt-50"></h1>
             </div>
 
          </div>
@@ -249,13 +249,13 @@
                <h1 class=" text-2xl text-white  ">Life 0</h1>
             </div>
          </div>
-      </div> -->
+      </div>
 
 
       <!-- End of game play -->
 
 
-      <div class="py-36">
+      <!-- <div class="py-36">
          <div class="border w-[500px] h-[500px] bg-green-400 mx-auto space-y-16">
          <h1 class="text-4xl font-bold text-center text-white mt-10">Score : 14</h1>
 
@@ -263,7 +263,7 @@
 
          <p class="text-center font-bold text-gray-500">Practice will make you Pro</p>
       </div>
-      </div>
+      </div> -->
 
 
 
@@ -272,7 +272,7 @@
 
 </div>
 
-
+    <script src="utility.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

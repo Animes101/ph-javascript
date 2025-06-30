@@ -948,3 +948,34 @@
 
 
 
+let play=()=>{
+
+   hiddenItems('stGame')
+
+   showItems('playGame');
+
+   containNewGame();
+}
+
+
+let score=0;
+
+let life=5;
+
+
+   function containNewGame(){
+
+      setInterval(() => {
+         let randomLetter=randomAlphabet();
+
+         
+         
+         let  showLetter=document.getElementById('showLetter')
+          
+
+               showLetter.innerText =randomLetter
+      }, 2000);
+
+
+
+   }

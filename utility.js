@@ -1,43 +1,43 @@
-const hiddenItems=(items)=>{
+// const hiddenItems=(items)=>{
 
-    let hiddenItems=document.getElementById(items);
+//     let hiddenItems=document.getElementById(items);
 
-    hiddenItems.classList.add('hidden')
-}
+//     hiddenItems.classList.add('hidden')
+// }
 
-const showItems=(items)=>{
+// const showItems=(items)=>{
 
-    let showItems=document.getElementById(items);
+//     let showItems=document.getElementById(items);
 
-    showItems.classList.remove('hidden');
-}
-
-
-const randomAlphabet=()=>{
-
-    let alphabet = [
-        'A',  'D', 'E', 'I',  'K', 'M', 'N',
-        'O',  'Q', 'U',
-        'V', 'W', 'X', 'Y', 'Z'
-    ];
-
-    let splitAlphabet=alphabet.join('');
+//     showItems.classList.remove('hidden');
+// }
 
 
-    let randomIndex = Math.floor(Math.random() * splitAlphabet.length);
-    let randomLetter = splitAlphabet[randomIndex];
+// const randomAlphabet=()=>{
+
+//     let alphabet = [
+//         'A',  'D', 'E', 'I',  'K', 'M', 'N',
+//         'O',  'Q', 'U',
+//         'V', 'W', 'X', 'Y', 'Z'
+//     ];
+
+//     let splitAlphabet=alphabet.join('');
 
 
-    return randomLetter;
+//     let randomIndex = Math.floor(Math.random() * splitAlphabet.length);
+//     let randomLetter = splitAlphabet[randomIndex];
 
-}
+
+//     return randomLetter;
+
+// }
 
 
-const addBgColor=(items)=>{
+// const addBgColor=(items)=>{
 
-    let bgcolor=document.getElementById(items);
+//     let bgcolor=document.getElementById(items);
 
-    // bgcolor.classList.add('text-green500')
-}
+//     // bgcolor.classList.add('text-green500')
+// }
 
 

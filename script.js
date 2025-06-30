@@ -948,100 +948,187 @@
 
 
 
-let play=()=>{
+// let play=()=>{
 
-   hiddenItems('stGame')
+//    hiddenItems('stGame')
 
-   showItems('playGame');
+//    showItems('playGame');
 
-   containNewGame();
-}
+//    containNewGame();
+// }
 
 
-   function containNewGame(){
+//    function containNewGame(){
 
-      setInterval(() => {
-         let randomLetter=randomAlphabet();
+//       setInterval(() => {
+//          let randomLetter=randomAlphabet();
 
-         let  showLetter=document.getElementById('showLetter')
+//          let  showLetter=document.getElementById('showLetter')
 
-               showLetter.innerText =randomLetter
+//                showLetter.innerText =randomLetter
 
-      }, 2000);
+//       }, 2000);
 
     
 
-   }
+//    }
 
-var score=0;
-var life=5;
+// var score=0;
+// var life=5;
 
 
-    let handleKeyPrss=(e)=>{
-        let  showLetter=document.getElementById('showLetter')
+//     let handleKeyPrss=(e)=>{
+//         let  showLetter=document.getElementById('showLetter')
 
-        let currenLeter=showLetter.innerText;
+//         let currenLeter=showLetter.innerText;
 
-        let keyPressKey=e.key.toLowerCase();
-        let curentLetter=currenLeter.toLowerCase();
+//         let keyPressKey=e.key.toLowerCase();
+//         let curentLetter=currenLeter.toLowerCase();
 
-        if(keyPressKey === curentLetter){
+//         if(keyPressKey === curentLetter){
 
-            const scoreElement=document.getElementById('score');
-             let score= scoreElement.innerText;
+//             const scoreElement=document.getElementById('score');
+//              let score= scoreElement.innerText;
 
-            let newScore =parseInt(score) + 10;
+//             let newScore =parseInt(score) + 10;
 
-            scoreElement.innerText=newScore;
+//             scoreElement.innerText=newScore;
 
            
 
-        }else{
+//         }else{
 
-            const lifeElement=document.getElementById('life');
-             let life= lifeElement.innerText;
+//             const lifeElement=document.getElementById('life');
+//              let life= lifeElement.innerText;
 
-             let totallife=parseInt(life) -1;
+//              let totallife=parseInt(life) -1;
 
-             lifeElement.innerText=totallife;
+//              lifeElement.innerText=totallife;
 
-             if(totallife < 0){
-                gameOver();
-             }
+//              if(totallife < 0){
+//                 gameOver();
+//              }
 
-        }
+//         }
 
 
-  }
+//   }
 
-  let gameOver=()=>{
+//   let gameOver=()=>{
 
-    hiddenItems('playGame');
-    showItems('endgame');
+//     hiddenItems('playGame');
+//     showItems('endgame');
 
-    let finalScore=document.getElementById('score').innerText;
-     document.getElementById('finalScore').innerText=finalScore;
+//     let finalScore=document.getElementById('score').innerText;
+//      document.getElementById('finalScore').innerText=finalScore;
 
     
-  }
+//   }
 
-  const playAgain=()=>{
-    const lifeElement=document.getElementById('life').innerText='5'
-    const scoreElement=document.getElementById('score').innerText='0'
-    hiddenItems('endgame');
-    showItems('playGame');
-  }
-
-
+//   const playAgain=()=>{
+//     const lifeElement=document.getElementById('life').innerText='5'
+//     const scoreElement=document.getElementById('score').innerText='0'
+//     hiddenItems('endgame');
+//     showItems('playGame');
+//   }
 
 
- document.addEventListener('keydown',handleKeyPrss)
+
+
+//  document.addEventListener('keydown',handleKeyPrss)
 
  
+// 30-1 ES6 Intro difference between var, Let and const
+
+
+// let numberss=4444;//resign kora jay 
+
+// const numbers=555; //resign kora jay na
+
+
+// function defaultParamiter(x,y=90){
+
+//     let total=x + y;
+
+//     return total;
+
+// }
+
+// console.log(defaultParamiter(30,30))
+
+
+// const myNames=`animes ${'barman'}`
+
+
+// const arrowFunction=(x, z ,...i)=>{
+
+//     let total=x + z + i;
+
+//     return total;
+
+
+// }
+
+
+// console.log(arrowFunction(4,30,444,444,444,444,))
+
+
+// const all=['kamal', 'salam','shine'];
+
+
+// console.log(...all);
 
 
 
+// 30-7 (advanced) Object and Array Destructure
 
 
 
+// const phones={
+//     name:'sumsang',
+//     prices:50000,
+//     model:'apple18'
+// }
 
+// delete phones.model
+
+// console.log(phones)
+
+
+// const {name,prices}=phones;
+
+// const keysss=Object.keys(phones);
+
+// console.log(keysss)
+
+
+// console.log(name,prices)
+
+
+// const formula=['44',444];
+
+// const [x,y]=formula;
+
+// console.log(x,y)
+
+
+const letter={
+    a:'dd',
+    b:'444',
+    c:'44'
+}
+
+
+
+for(let so in letter){
+
+    console.log(letter[so])
+}
+
+// const latters=['a', 'b','c'];
+
+
+// for( let latter of latters){
+
+//     console.log(latter);
+// }

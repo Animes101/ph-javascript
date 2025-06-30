@@ -958,24 +958,90 @@ let play=()=>{
 }
 
 
-let score=0;
-
-let life=5;
-
-
    function containNewGame(){
 
       setInterval(() => {
          let randomLetter=randomAlphabet();
 
-         
-         
          let  showLetter=document.getElementById('showLetter')
-          
 
                showLetter.innerText =randomLetter
+
       }, 2000);
 
-
+    
 
    }
+
+var score=0;
+var life=5;
+
+
+    let handleKeyPrss=(e)=>{
+        let  showLetter=document.getElementById('showLetter')
+
+        let currenLeter=showLetter.innerText;
+
+        let keyPressKey=e.key.toLowerCase();
+        let curentLetter=currenLeter.toLowerCase();
+
+        if(keyPressKey === curentLetter){
+
+            const scoreElement=document.getElementById('score');
+             let score= scoreElement.innerText;
+
+            let newScore =parseInt(score) + 10;
+
+            scoreElement.innerText=newScore;
+
+           
+
+        }else{
+
+            const lifeElement=document.getElementById('life');
+             let life= lifeElement.innerText;
+
+             let totallife=parseInt(life) -1;
+
+             lifeElement.innerText=totallife;
+
+             if(totallife < 0){
+                gameOver();
+             }
+
+        }
+
+
+  }
+
+  let gameOver=()=>{
+
+    hiddenItems('playGame');
+    showItems('endgame');
+
+    let finalScore=document.getElementById('score').innerText;
+     document.getElementById('finalScore').innerText=finalScore;
+
+    
+  }
+
+  const playAgain=()=>{
+    const lifeElement=document.getElementById('life').innerText='5'
+    const scoreElement=document.getElementById('score').innerText='0'
+    hiddenItems('endgame');
+    showItems('playGame');
+  }
+
+
+
+
+ document.addEventListener('keydown',handleKeyPrss)
+
+ 
+
+
+
+
+
+
+

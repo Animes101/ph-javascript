@@ -21,14 +21,23 @@ const randomAlphabet=()=>{
         'V', 'W', 'X', 'Y', 'Z'
     ];
 
-    let randomIndex = Math.floor(Math.random() * alphabet.length);
-    let randomLetter = alphabet[randomIndex];
-    
+    let splitAlphabet=alphabet.join('');
+
+
+    let randomIndex = Math.floor(Math.random() * splitAlphabet.length);
+    let randomLetter = splitAlphabet[randomIndex];
 
 
     return randomLetter;
 
+}
 
+
+const addBgColor=(items)=>{
+
+    let bgcolor=document.getElementById(items);
+
+    // bgcolor.classList.add('text-green500')
 }
 
 

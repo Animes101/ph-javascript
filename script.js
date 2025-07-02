@@ -1132,3 +1132,114 @@
 
 //     console.log(latter);
 // }
+
+
+// 31-2 Access Value, nested object, Optional chaining
+
+// const data=[{name:'animes barman',age:40,nationlty:'bangladesh'}]
+
+
+// console.log(data[0].age);
+
+// const students=[
+//     {
+//         name:'animes barman',
+//         country:{
+//             name:'bangladesh',
+//             code:[33,44]
+//         }
+//     },
+
+//     {
+//         name:'animes barman',
+//         country:{
+//             name:'bangladesh',
+//             code:''
+//         }
+//     }
+// ]
+
+
+// console.log(students[1].country?.code[1]);
+
+//map
+
+// const numbers=[33,44,55,66,77,88,11];
+
+
+// const result=numbers.map((items)=>{
+
+//        return items * 2
+
+
+// })
+
+
+// console.log(result)
+
+// 31-4 foreach, filter, find, and differences between them
+
+
+// const numberss=[55,66,77,44,33,22,44,55,66,66,66,66,66,66,];
+
+// const not66=numberss.filter((items)=> items !== 66);
+
+
+// console.log(not66);
+
+
+// const first66=numberss.find((items)=> items === 66);
+
+
+
+// console.log(first66);
+
+
+
+const products=[
+    {
+        name:'apple',
+        proces:4000,
+    },
+    {
+        name:'apple',
+        proces:4000,
+    },
+    {
+        name:'apple',
+        proces:4000,
+    },
+    {
+        name:'apple',
+        proces:5000,
+    },
+    {
+        name:'apple',
+        proces:5000,
+    },
+    {
+        name:'apple',
+        proces:5000,
+    }
+]
+
+
+
+// const productsPrices=products.map((items)=> items.proces);
+
+// console.log(productsPrices)
+
+
+// const productsHigh=products.filter((items)=> items.proces > 4000);
+
+// console.log(productsHigh)
+
+
+// const fristHigh=products.find((items)=> items.proces == 5000)
+
+// console.log(fristHigh);
+
+const reduces=products.reduce((prev,cur)=>  prev + cur, 0);
+
+
+console.log(reduces);

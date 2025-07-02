@@ -1112,18 +1112,18 @@
 // console.log(x,y)
 
 
-const letter={
-    a:'dd',
-    b:'444',
-    c:'44'
-}
+// const letter={
+//     a:'dd',
+//     b:'444',
+//     c:'44'
+// }
 
 
 
-for(let so in letter){
+// for(let so in letter){
 
-    console.log(letter[so])
-}
+//     console.log(letter[so])
+// }
 
 // const latters=['a', 'b','c'];
 

@@ -1352,3 +1352,34 @@
 
 //     console.log( 'x is true')
 // }
+
+
+// const x=90;
+
+// const y='90';
+
+
+// if( x == y){
+
+
+//     console.log( 'equal');
+// }else if(x === y){
+
+//     console.log( 'not equal')
+// }
+
+// 32-5 Block scope global scope simple understanding of Hoisting
+
+
+const display=(a,b)=>{
+
+
+    let x=a + b ;
+
+    console.log(x);
+}
+
+
+display(3,3)
+
+console.log(x)

@@ -1371,15 +1371,87 @@
 // 32-5 Block scope global scope simple understanding of Hoisting
 
 
-const display=(a,b)=>{
+// const display=(a,b)=>{
 
 
-    let x=a + b ;
+//     let x=a + b ;
 
-    console.log(x);
+//     console.log(x);
+// }
+
+
+// display(3,3)
+
+// console.log(x)
+
+
+
+// 32-6 (advanced) Closure, encapsulation, private variable
+
+
+// const cls=()=>{
+
+//     let total=0;
+
+//     return function(){
+//         total ++ ;
+//         return total;
+//     }
+// }
+
+
+// const firstCls=cls();
+
+
+// console.log(firstCls())
+// console.log(firstCls())
+// console.log(firstCls())
+// console.log(firstCls())
+
+// const secondcls=cls();
+
+
+// console.log(secondcls())
+// console.log(secondcls())
+// console.log(secondcls())
+// console.log(secondcls())
+
+
+
+// 32-7 (optional) Callback function and pass different functions
+
+
+// const grtirng=(gritHandler,text)=>{
+
+//     gritHandler(text);
+// }
+
+
+// const gritHandler=(text)=>{
+
+//     console.log('call back function'  + text)
+// }
+
+// const grithandler2=(text)=>{
+
+//     console.log('griting handler 2' + text)
+// }
+
+
+// grtirng(gritHandler ,  'some text call back');
+
+// grtirng(grithandler2('solaiman'));
+
+
+
+function dispay(x,y,u){
+
+    console.log(arguments);
+
+    const arg=[...arguments]
+
+    console.log(arg)
 }
 
 
-display(3,3)
-
-console.log(x)
+dispay(33,4,2)

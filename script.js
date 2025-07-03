@@ -1196,32 +1196,32 @@
 
 
 
-const products=[
-    {
-        name:'apple',
-        proces:4000,
-    },
-    {
-        name:'apple',
-        proces:4000,
-    },
-    {
-        name:'apple',
-        proces:4000,
-    },
-    {
-        name:'apple',
-        proces:5000,
-    },
-    {
-        name:'apple',
-        proces:5000,
-    },
-    {
-        name:'apple',
-        proces:5000,
-    }
-]
+// const products=[
+//     {
+//         name:'apple',
+//         proces:4000,
+//     },
+//     {
+//         name:'apple',
+//         proces:4000,
+//     },
+//     {
+//         name:'apple',
+//         proces:4000,
+//     },
+//     {
+//         name:'apple',
+//         proces:5000,
+//     },
+//     {
+//         name:'apple',
+//         proces:5000,
+//     },
+//     {
+//         name:'apple',
+//         proces:5000,
+//     }
+// ]
 
 
 
@@ -1239,7 +1239,116 @@ const products=[
 
 // console.log(fristHigh);
 
-const reduces=products.reduce((prev,cur)=>  prev + cur, 0);
+// const numbers = [1, 2, 3, 4, 5];
+
+// const total = numbers.reduce((sum, num) => sum + num, 0);
+
+// console.log(total);
+
+// 31-6 (optional) Introduction to Class and objects
 
 
-console.log(reduces);
+// class Car {
+//   constructor(brand, model) {
+//     this.brand = brand;
+//     this.model = model;
+//   }
+
+//   startEngine() {
+//     console.log(`${this.brand} ${this.model} is starting...`);
+//   }
+// }
+
+// const car1 = new Car("Toyota", "Corolla");
+// car1.startEngine();
+
+// 32-1 Module Overview, Primitive and non-primitive data type
+
+// let a=90;
+
+// let b=a;
+
+// console.log(a,b);
+
+// b=80;
+
+// console.log(a,b)
+
+
+// let abu={joy:'web developer'};
+
+
+// let salm=abu ;
+
+// console.log(salm ,abu);
+
+
+// abu.joy='bakend';
+
+// console.log(abu , salm)
+
+
+// 32-2 Null Vs Undefined, different ways you will get undefined
+
+
+// let first;
+
+// console.log(first);
+
+// function second(a,b){
+
+//     const total=a+ b;
+
+//     console.log(b)
+
+// //no return
+// }
+
+// console.log(second(89));
+
+// const neGitiv=(a,b)=>{
+
+//     if(a<0 || b<0){
+//         return
+//     }
+
+//     return a+b;
+// }
+
+// console.log(neGitiv(3,-5))
+
+
+// const fifth={id:2, name:'area manager', pri:44};
+
+// console.log(fifth.gol);
+
+
+// const numberss=[3,4,5,6];
+
+
+// console.log(numberss[9]);
+
+// let ok=undefined;
+
+// let go=null;
+
+
+// console.log(ok, go)
+
+
+
+// 32-3 Different Truthy and Falsy values in JavaScript
+
+
+
+// const x=0;
+
+
+// if(!x){
+
+//     console.log('x is not ture')
+// }else if(!!x){
+
+
+//     console.log( 'x is true')
+// }

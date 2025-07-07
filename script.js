@@ -1444,14 +1444,46 @@
 
 
 
-function dispay(x,y,u){
+// function dispay(x,y,u){
 
-    console.log(arguments);
+//     console.log(arguments);
 
-    const arg=[...arguments]
+//     const arg=[...arguments]
 
-    console.log(arg)
-}
+//     console.log(arg)
+// }
 
 
-dispay(33,4,2)
+// dispay(33,4,2)
+
+
+
+
+
+
+
+// 33-1 How does internet work, HTTP Vs HTTPs and What is an API
+
+// 33-2 Intro to JSON, JSON Structure, parse, stringify
+
+
+// const user={name:'animes barman', age:20, country:'bangladesh',gmail:'animesbarman101@gmail.com'}
+
+// const stringifyUser=JSON.stringify(user);
+
+// console.log(stringifyUser);
+
+
+// const jsonParse=JSON.parse(stringifyUser);
+
+// console.log(jsonParse);
+
+
+// 33-3 JSON placeholder, GET data, display data on UI
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+

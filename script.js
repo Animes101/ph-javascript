@@ -1599,6 +1599,7 @@
  
 const fetchPhoneData=async(searchText)=>{
 
+
     try{
         const res=await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
         const data=await res.json();
@@ -1618,21 +1619,20 @@ const displayPhondeData=(data)=>{
 
  phoneContainer.textContent='';
 
-
-     const showAllData=document.querySelector('.slicesData');
+ const showAllData=document.querySelector('.slicesData');
 
      data.data.length>5 ? showAllData.classList.remove('hidden') : showAllData.classList.add('hidden'); 
 
   
-    data.data.slice(0,10).forEach(element => {
-
-        console.log(element)
+    data.data.forEach(element => {
         const phoneDiv=document.createElement('div');
         phoneDiv.classList.add('phon', 'border','bg-yellow-100','rounded-sm','p-4');
         phoneDiv.innerHTML=`
             <h2 class='text-center py-5 font-xl font-bold text-blue-700'>${element.brand}</h2>
             <img class='w-[60%] mx-auto' src="${element.image}" alt="${element.brand}" />
             <p class='text-center font-bold text-gray-900'>${element?.phone_name}</p>
+            <button onClick="handleShowDetails(\`${element.slug}\`)" class='bg-blue-500 text-white py-2 px-4 rounded'>Show Details</button>
+
         `;
         phoneContainer.appendChild(phoneDiv);
 
@@ -1645,6 +1645,8 @@ const displayPhondeData=(data)=>{
 
 const handleSearch=()=>{
 
+  
+
     let searchFild=document.getElementById('search-field');
 
 
@@ -1652,6 +1654,7 @@ const handleSearch=()=>{
 
         fetchPhoneData(e.target.value);
     })
+
 
 
 }
@@ -1670,6 +1673,52 @@ const toggleLoading=(toggle)=>{
 
     
 }
+
+const handleShowDetails=async(id)=>{
+
+    let res=await fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
+    let dataf=await res.json();
+
+    showDetail(dataf.data);
+
+
+}
+
+const showDetail=(data)=>{
+
+    console.log(data);
+
+
+    const showDetails=document.getElementById('phone-details');
+
+    const createShowDetails=document.createElement('div');
+    createShowDetails.classList.add('phone-details', 'flex', 'justify-center', 'items-center', 'h-[80vh]');
+
+    showDetail.innerHTML=`
+    <div class="phone-details w-[400px]">
+                              <h1 class="text-2xl font-bold text-green-600">${data.name}</h1>
+                              <p id="phone-name" class="text-lg font-semibold"></p>
+                              <p id="phone-brand" class="text-lg"></p>
+                              <p id="phone-release" class="text-lg"></p>
+                              <img src="img/1.jpg" alt="">
+                           </div>
+
+
+    `
+    showDetail.appendChild(createShowDetails)
+
+    
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

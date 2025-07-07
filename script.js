@@ -1482,8 +1482,115 @@
 // 33-3 JSON placeholder, GET data, display data on UI
 
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+//       .catch(err=> console.log(err));
+
+
+
+// const fetchData=(url)=>{
+
+//   fetch(url)
+//       .then(response => response.json())
+//       .then(data => displayUser(data))
+
+
+// }
+
+
+// const displayUser=(data)=>{
+
+//     for(let user  of data){
+
+//         let userDiv=document.getElementById('user');
+
+//    // create title
+//         const userTitle=document.createElement('h2',);
+//         userTitle.setAttribute('class','title')
+//         userTitle.classList.add('text-center', 'text-2xl','font-bold' ,'mb-2')
+//         userTitle.innerText=`${user.title}`;
+//         userDiv.appendChild(userTitle);
+
+
+
+//         // create body
+//         const userBody=document.createElement('p');
+//         userBody.setAttribute('class', 'body')
+//         userBody.classList.add('text-center', 'text-base', 'text-gray-900')
+//         userBody.innerText=`${user.body}`
+//         userDiv.appendChild(userBody);
+//     }
+
+    
+// }
+
+// const createPost=(url)=>{
+
+//     fetch(url, {
+//         method: 'POST',
+//         body: JSON.stringify({
+//             title: 'Hama ri adhari kahani',
+//             body: 'bara ki khabar',
+//             userId: 20,
+//         }),
+//         headers: {
+//             'Content-type': 'application/json; charset=UTF-8',
+//         },
+//         })
+//         .then((response) => response.json())
+//         .then((json) => console.log(json));
+
+// }
+
+
+// const deletePost=(url)=>{
+//     fetch(url,{
+//       method: 'DELETE',
+// });
+
+// }
+
+// const updatePost=(url)=>{
+
+//     fetch(url, {
+//   method: 'PUT',
+//   body: JSON.stringify({
+//     id: 1,
+//     title: 'Update title',
+//     body: 'Update body',
+//     userId: 1,
+//   }),
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+
+// }
+
+// 33-9 async await and interview questions
+
+
+// const fetchData=async ()=>{
+
+//     try{
+//         const res=await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//     const data=await res.json();
+
+//     console.log(data)
+//     }catch(err){
+
+//         console.log(err);
+//     }
+// }
+
+// fetchData()
+
+
+// 34-1 Load data using Phone Hunter API
+
 
 

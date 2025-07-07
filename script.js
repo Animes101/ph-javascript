@@ -1593,4 +1593,89 @@
 // 34-1 Load data using Phone Hunter API
 
 
+//phone hunter api
+
+
+ 
+const fetchPhoneData=async(searchText)=>{
+
+    try{
+        const res=await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
+        const data=await res.json();
+        displayPhondeData(data)
+
+        toggleLoading(false);
+    }catch(err){
+
+        console.log(err.message)
+    }
+}
+
+
+const displayPhondeData=(data)=>{
+   
+ let phoneContainer=document.getElementById('phone-container');
+
+ phoneContainer.textContent='';
+
+
+     const showAllData=document.querySelector('.slicesData');
+
+     data.data.length>5 ? showAllData.classList.remove('hidden') : showAllData.classList.add('hidden'); 
+
+  
+    data.data.slice(0,10).forEach(element => {
+
+        console.log(element)
+        const phoneDiv=document.createElement('div');
+        phoneDiv.classList.add('phon', 'border','bg-yellow-100','rounded-sm','p-4');
+        phoneDiv.innerHTML=`
+            <h2 class='text-center py-5 font-xl font-bold text-blue-700'>${element.brand}</h2>
+            <img class='w-[60%] mx-auto' src="${element.image}" alt="${element.brand}" />
+            <p class='text-center font-bold text-gray-900'>${element?.phone_name}</p>
+        `;
+        phoneContainer.appendChild(phoneDiv);
+
+   })
+
+   
+
+
+}
+
+const handleSearch=()=>{
+
+    let searchFild=document.getElementById('search-field');
+
+
+    searchFild.addEventListener('keyup',(e)=>{
+
+        fetchPhoneData(e.target.value);
+    })
+
+
+}
+
+window.addEventListener('load',()=>{
+    toggleLoading(true);
+    handleSearch();
+});
+
+
+const toggleLoading=(toggle)=>{
+
+    let loading=document.querySelector('.load');
+
+    toggle ? loading.classList.remove('hidden') :  loading.classList.add('hidden');
+
+    
+}
+
+
+
+
+
+
+
+
 

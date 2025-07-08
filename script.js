@@ -1735,12 +1735,17 @@
 
 // 35-4 Single-threaded, Asynchronous vs Synchronous
 
-console.log('start');
-console.log('start2');
-console.log('start3');
-console.log('start4');
-console.log('start5');
-console.log('start6');
+
+
+// Asynchronous
+// console.log('start');
+// console.log('start2');
+// setTimeout(()=>{
+//    console.log('start3');
+// },2000)
+// console.log('start4');
+// console.log('start5');
+// console.log('start6');
 
 
 
@@ -1748,9 +1753,121 @@ console.log('start6');
 
 
 
+// Synchronous
+// console.log('start');
+// console.log('start2');
+// console.log('start3');
+// console.log('start4');
+// console.log('start5');
+// console.log('start6');
 
 
 
 
+// 35-5 Promise, Async/Await
+
+// const  myLoad=()=>{
+
+//     return new Promise((resolve, reject)=>{
+//         if(true){
+
+//             resolve('success')
+//         }else{
+
+//             reject('err')
+//         }
+
+//     })
+// }
 
 
+// const result=myLoad();
+
+// console.log(result);
+
+
+
+
+// const fetchData=async()=>{
+
+//     try{
+//         const res=await fetch('https://fakestoreapi.com/products')
+//         const data=await res.json();
+
+//         console.log(data);
+//     }catch(err){
+//         console.log(err)
+//     }
+
+    
+// }
+
+
+// fetchData();
+
+
+// 35-6 settimeout, setInterval and clearInterval
+
+// setTimeout(() => {
+
+//     console.log('2s later')
+    
+// }, 2000);
+
+
+// clearTimeout()
+
+
+// setInterval(()=>{
+
+//     console.log('2s ')
+// },2000)
+
+
+
+// 35-7 JavaScript event loop and concurrency
+
+
+// function a1(){
+
+//     console.log('aa')
+//     b1();
+
+//     console.log('aaaaa')
+// }
+// function b1(){
+
+//     console.log('bb');
+
+//     c1();
+
+//     console.log('bbbbbbb')
+// }
+
+// function c1(){
+
+//     console.log('cc')
+// }
+
+// a1();
+
+
+// 35-8 Error Handling: try, catch, throw and finally
+
+
+
+const handleError=()=>{
+
+
+    try{
+        if(false){
+            throw new Error('Error occurred');
+        }
+
+        console.log('its ok')
+    }catch(err){
+        console.log(err);
+    }
+}
+
+handleError();

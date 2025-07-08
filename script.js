@@ -1856,18 +1856,141 @@
 
 
 
-const handleError=()=>{
+// const handleError=()=>{
 
 
-    try{
-        if(false){
-            throw new Error('Error occurred');
-        }
+//     try{
+//         if(false){
+//             throw new Error('Error occurred');
+//         }
 
-        console.log('its ok')
-    }catch(err){
-        console.log(err);
+//         console.log('its ok')
+//     }catch(err){
+//         console.log(err);
+//     }
+// }
+
+// handleError();
+
+
+
+
+// 36_5-1 Set and read Simple value from local storage
+
+// localStorage.setItem('age', '20')
+
+
+// const name=localStorage.getItem('age');
+
+// console.log(name);
+
+
+// localStorage.setItem('hello' ,'world');
+
+// localStorage.removeItem('hello')
+
+
+
+// localStorage.setItem('names', JSON.stringify(['harami', 'tui ', 'kharap']));
+
+
+// const names=JSON.parse(localStorage.getItem('names'));
+
+// console.log(names);
+
+
+
+
+
+
+function addToCart(){
+
+    
+
+    const productName=document.getElementById('product-name');
+    const quyantity=document.getElementById('quantity')
+
+    if(productName.value === '' || quyantity.value === ''){
+        alert('please fill all input fields');
+
+    }else if(!isNaN(productName.value)){
+
+        alert('please enter name not number');
+
+        return;
+    }else{
+
+         const productValue=productName.value ;
+         const quantityValue=quyantity.value ;
+
+
+
+    saveProduct(productValue,quantityValue);
     }
+
+    productName.value='';
+    quyantity.value='';
+
 }
 
-handleError();
+
+
+const getStoresShopingCard=()=>{
+     let cart={};
+    const storageCart=localStorage.getItem('cart');
+
+    if(storageCart){
+        cart=JSON.parse(storageCart);
+    }
+    return cart;
+}
+
+
+
+const saveProduct=(name,quantity)=>{
+    
+    const cart=getStoresShopingCard();
+
+    cart[name]=quantity;
+
+    const cartStringify=JSON.stringify(cart);
+
+    localStorage.setItem('cart', cartStringify);
+
+
+}
+
+
+const displayCart=()=>{
+
+    const getCart=getStoresShopingCard();
+
+    for( let singleProduct in getCart){
+
+        let productName=singleProduct;
+        let quantity=getCart[singleProduct];
+
+
+
+
+        const cartContainer=document.getElementById('card-container')
+
+
+    let createDiv=document.createElement('div');
+    createDiv.innerHTML=`
+
+                       <h1 class="font-bold text-lg">Product ${productName}</h1>
+                     <p class="text-gray-500">Quantity: ${quantity}</p>
+
+
+    `
+
+    cartContainer.appendChild(createDiv);
+
+
+    }
+
+}
+
+
+displayCart();

@@ -1597,124 +1597,150 @@
 
 
  
-const fetchPhoneData=async(searchText)=>{
+// const fetchPhoneData=async(searchText)=>{
 
 
-    try{
-        const res=await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
-        const data=await res.json();
-        displayPhondeData(data)
+//     try{
+//         const res=await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
+//         const data=await res.json();
+//         displayPhondeData(data)
 
-        toggleLoading(false);
-    }catch(err){
+//         toggleLoading(false);
+//     }catch(err){
 
-        console.log(err.message)
-    }
-}
+//         console.log(err.message)
+//     }
+// }
 
 
-const displayPhondeData=(data)=>{
+// const displayPhondeData=(data)=>{
    
- let phoneContainer=document.getElementById('phone-container');
+//  let phoneContainer=document.getElementById('phone-container');
 
- phoneContainer.textContent='';
+//  phoneContainer.textContent='';
 
- const showAllData=document.querySelector('.slicesData');
+//  const showAllData=document.querySelector('.slicesData');
 
-     data.data.length>5 ? showAllData.classList.remove('hidden') : showAllData.classList.add('hidden'); 
+//      data.data.length>5 ? showAllData.classList.remove('hidden') : showAllData.classList.add('hidden'); 
 
   
-    data.data.forEach(element => {
-        const phoneDiv=document.createElement('div');
-        phoneDiv.classList.add('phon', 'border','bg-yellow-100','rounded-sm','p-4');
-        phoneDiv.innerHTML=`
-            <h2 class='text-center py-5 font-xl font-bold text-blue-700'>${element.brand}</h2>
-            <img class='w-[60%] mx-auto' src="${element.image}" alt="${element.brand}" />
-            <p class='text-center font-bold text-gray-900'>${element?.phone_name}</p>
-            <button onClick="handleShowDetails(\`${element.slug}\`)" class='bg-blue-500 text-white py-2 px-4 rounded'>Show Details</button>
+//     data.data.forEach(element => {
+//         const phoneDiv=document.createElement('div');
+//         phoneDiv.classList.add('phon', 'border','bg-yellow-100','rounded-sm','p-4');
+//         phoneDiv.innerHTML=`
+//             <h2 class='text-center py-5 font-xl font-bold text-blue-700'>${element.brand}</h2>
+//             <img class='w-[60%] mx-auto' src="${element.image}" alt="${element.brand}" />
+//             <p class='text-center font-bold text-gray-900'>${element?.phone_name}</p>
+//             <button onClick="handleShowDetails(\`${element.slug}\`)" class='bg-blue-500 text-white py-2 px-4 rounded'>Show Details</button>
 
-        `;
-        phoneContainer.appendChild(phoneDiv);
+//         `;
+//         phoneContainer.appendChild(phoneDiv);
 
-   })
+//    })
 
    
 
 
-}
+// }
 
-const handleSearch=()=>{
+// const handleSearch=()=>{
 
   
 
-    let searchFild=document.getElementById('search-field');
+//     let searchFild=document.getElementById('search-field');
 
 
-    searchFild.addEventListener('keyup',(e)=>{
+//     searchFild.addEventListener('keyup',(e)=>{
 
-        fetchPhoneData(e.target.value);
-    })
-
-
-
-}
-
-window.addEventListener('load',()=>{
-    toggleLoading(true);
-    handleSearch();
-});
+//         fetchPhoneData(e.target.value);
+//     })
 
 
-const toggleLoading=(toggle)=>{
 
-    let loading=document.querySelector('.load');
+// }
 
-    toggle ? loading.classList.remove('hidden') :  loading.classList.add('hidden');
-
-    
-}
-
-const handleShowDetails=async(id)=>{
-
-    let res=await fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
-    let dataf=await res.json();
-
-    showDetail(dataf.data);
+// window.addEventListener('load',()=>{
+//     toggleLoading(true);
+//     handleSearch();
+// });
 
 
-}
+// const toggleLoading=(toggle)=>{
 
-const showDetail=(data)=>{
+//     let loading=document.querySelector('.load');
 
-    console.log(data);
-
-
-    const showDetails=document.getElementById('phone-details');
-
-    const createShowDetails=document.createElement('div');
-    createShowDetails.classList.add('phone-details', 'flex', 'justify-center', 'items-center', 'h-[80vh]');
-
-    showDetail.innerHTML=`
-    <div class="phone-details w-[400px]">
-                              <h1 class="text-2xl font-bold text-green-600">${data.name}</h1>
-                              <p id="phone-name" class="text-lg font-semibold"></p>
-                              <p id="phone-brand" class="text-lg"></p>
-                              <p id="phone-release" class="text-lg"></p>
-                              <img src="img/1.jpg" alt="">
-                           </div>
-
-
-    `
-    showDetail.appendChild(createShowDetails)
+//     toggle ? loading.classList.remove('hidden') :  loading.classList.add('hidden');
 
     
+// }
 
-}
+// const handleShowDetails=async(id)=>{
+
+//     let res=await fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
+//     let dataf=await res.json();
+
+//     showDetail(dataf.data);
+
+
+// }
+
+// const showDetail=(data)=>{
+
+
+//     let showDetailsView=document.getElementById('hone-details');
+
+//     console.log(showDetailsView);
+
+//     const hidendItems=document.getElementById('hone-details');
+
+//     hidendItems.classList.remove('hidden')
+
+//     const createShowDetails=document.createElement('div');
+//     createShowDetails.classList.add('phone-details', 'w-[400px]' ,'bg-yellow-100');
+
+//     createShowDetails.innerHTML=`
+//                               <h1 class="text-2xl font-bold text-green-600">${data.name}</h1>
+//                               <p id="phone-name" class="text-lg font-semibold"></p>
+//                               <p id="phone-brand" class="text-lg"></p>
+//                               <p id="phone-release" class="text-lg">${data.mainFeatures.chipSet}</p>
+//                               <img src=${data.image} alt="">
+                           
+
+
+//     `
+
+
+//     showDetailsView.appendChild(createShowDetails);
+// }
+
+
+// const hiddenShow=()=>{
+
+//     const hidendItems=document.getElementById('hone-details');
+
+//     hidendItems.classList.add('hidden')
+
+// }
 
 
 
 
 
+
+
+// 35-3 JavaScript Execution Context and Call stack
+
+
+
+
+// 35-4 Single-threaded, Asynchronous vs Synchronous
+
+console.log('start');
+console.log('start2');
+console.log('start3');
+console.log('start4');
+console.log('start5');
+console.log('start6');
 
 
 
